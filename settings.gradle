@@ -1,0 +1,4 @@
+rootProject.name = 'demo_feign_1'
+include 'book-service'
+include 'author-service'
+

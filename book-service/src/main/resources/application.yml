@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: book-service
+  datasource:
+    username: postgres
+    password: database09
+    url: jdbc:postgresql://localhost:5432/book_db
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+server:
+  port: 9090
