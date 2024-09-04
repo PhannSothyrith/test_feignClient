@@ -10,11 +10,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @FeignClient(name = "author-service", url = "http://localhost:8081/api/v1/author")
 public interface AuthorServiceFeignClient {
-
     @GetMapping("/get-author/{authorId}")
     AuthorResponse getAuthorById(@PathVariable Long authorId);
-
-    @PostMapping("create-author")
+    @PostMapping("create-author")   
     AuthorResponse createAuthor(@RequestBody AuthorRequest authorRequest);
-
 }

@@ -18,9 +18,9 @@ public class Book {
     private String title;
     private String description;
     private Long authorId;
-    public BookResponse toResponse(){
+    public BookResponse toResponse(AuthorResponse authorResponse) {
         return new BookResponse(
-                this.bookId, this.title, this.description, null
+                this.bookId, this.title, this.description, authorResponse
         );
     }
 }

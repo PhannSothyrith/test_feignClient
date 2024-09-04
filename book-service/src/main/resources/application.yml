@@ -7,6 +7,6 @@ spring:
     url: jdbc:postgresql://localhost:5432/book_db
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
 server:
-  port: 9090
+  port: 8080
