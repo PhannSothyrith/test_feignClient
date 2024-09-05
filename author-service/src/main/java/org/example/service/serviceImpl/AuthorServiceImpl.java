@@ -22,6 +22,7 @@ public class AuthorServiceImpl implements AuthorService {
     public Author createAuthor(AuthorRequest authorRequest) {
         Author author = new Author();
         author.setAuthorName(authorRequest.getAuthorName());
+        System.out.println("hello world");
         author.setAge(authorRequest.getAge());
         author.setNational(authorRequest.getNational());
         return authorRepository.save(author);
